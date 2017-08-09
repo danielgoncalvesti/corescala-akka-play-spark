@@ -1,0 +1,17 @@
+[0m[[0minfo[0m] [0mPessoasSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mpessoa fisica[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter cpf correto[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter nome correto[0m
+[0m[[0minfo[0m] [0mpessoa juridica[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter cnpj correto[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter nome correto[0m
+[0m[[0minfo[0m] [0mtrabalhando com listas de pessoas[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter o tamanho da lista de pessoas igual a 3[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter o documento correto[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification PessoasSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 86 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m6 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

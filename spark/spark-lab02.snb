@@ -1,0 +1,113 @@
+{
+  "metadata" : {
+    "name" : "spark-lab02",
+    "user_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "auto_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : [ "-Xmx512m" ],
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "id" : "20FCFA5AEF2D4BD380CC97088ABCF686"
+    },
+    "cell_type" : "markdown",
+    "source" : "# Laboratorio 2 - Contagem de palavras com Spark Notebook utilizando acumuladores e broadcast\n\nNeste laboratório iremos incrementar o contador de palavras criado no laboratório anterior para ignorar palavras com simbolos como *, (, ), etc.\n\nIremos criar uma variável de broadcast que deve conter os simbolos proibidos. Todas as palavras que contenham algum dos simbolos devem ser excluidas da contagem de palavras.\n\nAlém disso, vamos utilizar um acumulador que deve conter o número de palavras excluidas da contagem.\n\nOs simbolos proibidos devem ser determinados a partir de diversas execuções do programa seguindo o algoritmo:\n<ul>\n  <li>executar a primeira vez o programa sem excluir nenhuma palavra</li>\n  <li>identificar palavras com simbolos como (,),*, etc</li>\n  <li>adicionar os simbolos encontrados na lista de broadcast de simbolos proibidos</li>\n  <li>executar novamente o programa até eliminar todas as palavras com simbolos</li>\n</ul>\n\nOBS: Os seguintes simbolos são permitidos nas palavras: '-' e '’'\n\nSeguindo o exemplo de contagem utilizado no laboratório anterior e o modelo de uso de acumuladores e variáveis de broadcast apresentados na apostila, implemente o código pedido a seguir:"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "B8DB24727F474997A1A8AFB4BBC39D67"
+    },
+    "cell_type" : "code",
+    "source" : "//Primeiro vamos carregar o conteudo do arquivo README.MD.\nval input = ???",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "EAC48D5AF7034EF781970C4C52485AD9"
+    },
+    "cell_type" : "code",
+    "source" : "//Criar um acumulador para contagem do número de palavras excluidas\nval ignored = ???",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "0DB25B394E5344D783C82DCFE2D3EB52"
+    },
+    "cell_type" : "code",
+    "source" : "//E uma variável de broadcast contendo a lista de simbolos que devem ser excluidos\nval forbiddenSymbols = ???  ",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "4E69D499766249458A33B16A7A6751F2"
+    },
+    "cell_type" : "code",
+    "source" : "//Quebrar o arquivo carregado em uma lista de palavras.\nval words = ???",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "74A6B12B19E74424A9A24E9871C6853B"
+    },
+    "cell_type" : "code",
+    "source" : "/* \nFiltrar as palavras para utilizar somente aquelas que não contém os simbolos proibidos.\nNão se esqueça de incrementar o contador quando uma palavra for excluida. \n*/\nval filtered = ???",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "E7A71566E0F54336837FF2281F0FE5F8"
+    },
+    "cell_type" : "code",
+    "source" : "//Aplicar o algoritmo map/reduce de contagem de palavras conforme visto na apostila.\nval counts = ???",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "026F2B007966466C89E47FB078A2CC13"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir cada uma das palavras encontradas e sua respectiva contagem.\ncounts.foreach{ case (word,count) => println(f\"$word%20s \\t $count\")}",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "DA991841CE7941BCBB3BF66CA146EB95"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir o número de palavras ignoradas\nprintln(s\"Total de palavras ignoradas ${ignored.value}\")",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "id" : "6B61DC6D6F554554831BB17E2B4E8E42"
+    },
+    "cell_type" : "markdown",
+    "source" : "O resultado esperado é ignorar 209 palavras!"
+  } ],
+  "nbformat" : 4
+}

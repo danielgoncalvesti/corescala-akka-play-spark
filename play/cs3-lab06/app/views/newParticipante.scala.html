@@ -1,0 +1,12 @@
+@(header: String, formParticipante: Form[Participante])
+@import helper._
+@import play.api.Play.current
+@import play.api.i18n.Messages.Implicits._
+
+<h2>@header</h2>
+
+@form(routes.HomeController.salvarParticipante) {
+	@inputText(formParticipante("nome"))
+	@inputText(formParticipante("email"))
+	<input type="submit" value="Enviar" />
+}

@@ -1,0 +1,323 @@
+{
+  "metadata" : {
+    "name" : "spark-lab03-sol",
+    "user_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "auto_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : [ "-Xmx512m" ],
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "id" : "20FCFA5AEF2D4BD380CC97088ABCF686"
+    },
+    "cell_type" : "markdown",
+    "source" : "# Laboratorio 3 - Spark SQL\n\nNeste laboratório iremos carregar um arquivo JSON com uma lista de produtos e exercitar a criação de diversas consultas utilizando SparkSQL.\n\nPara implementar o código pedido a seguir, consulte os exemplos apresentados na apostila e o ScalaDoc da API.\n\nAs consultas devem ser implementadas utilizando SQL ou a API de programação, conforme solicitado."
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "E5F69EA6847B48A38A5B53583C7FFE9E"
+    },
+    "cell_type" : "code",
+    "source" : "//Criar um SQLContext\nimport org.apache.spark.sql.SQLContext\nval sqlContext = new SQLContext(sc)",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "import org.apache.spark.sql.SQLContext\nsqlContext: org.apache.spark.sql.SQLContext = org.apache.spark.sql.SQLContext@3f4aa2\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 4
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "B8DB24727F474997A1A8AFB4BBC39D67"
+    },
+    "cell_type" : "code",
+    "source" : "//Carregar o conteudo do arquivo produtos.json.\nval produtos = sqlContext.read.json(\"produtos.json\")",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "produtos: org.apache.spark.sql.DataFrame = [ativo: boolean, categoria: struct<descricao:string,id:bigint>, id: bigint, marca: string, nome: string, nomeArquivo: string, preco: double, tamanho: bigint, taxaEntrega: double, type: string]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 5
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "EAC48D5AF7034EF781970C4C52485AD9"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir o schema inferido\nprodutos.printSchema",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "root\n |-- ativo: boolean (nullable = true)\n |-- categoria: struct (nullable = true)\n |    |-- descricao: string (nullable = true)\n |    |-- id: long (nullable = true)\n |-- id: long (nullable = true)\n |-- marca: string (nullable = true)\n |-- nome: string (nullable = true)\n |-- nomeArquivo: string (nullable = true)\n |-- preco: double (nullable = true)\n |-- tamanho: long (nullable = true)\n |-- taxaEntrega: double (nullable = true)\n |-- type: string (nullable = true)\n\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 6
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "0DB25B394E5344D783C82DCFE2D3EB52"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir os dados lidos\nprodutos.show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n|ativo|  categoria| id|           marca|              nome|nomeArquivo|preco|tamanho|taxaEntrega|    type|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n| true|[Blu-ray,2]|  1|  Marvel Studios|        Vingadores|       null| 89.9|   null|        5.0|material|\n| true|  [Livro,1]|  2|Globalcode Press|     Academia Java|       null| 40.0|   null|        3.0|material|\n| true|  [Livro,1]|  3|Globalcode Press|Academia Arquiteto|       null| 45.0|   null|        0.0|material|\n| true|  [Games,5]|  4|        Blizzard|        Diablo III|    diablo3|100.0|    500|       null| digital|\n| true|[Blu-ray,2]|  5|Globalcode Press|      Academia Web|       null| 35.0|   null|        0.0|material|\n| true|  [Games,5]| 12|         Bioware|    Dragon Age III| dragonage3| 99.0|   1000|       null| digital|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 7
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "4E69D499766249458A33B16A7A6751F2"
+    },
+    "cell_type" : "markdown",
+    "source" : "A partir dos dados lidos você consegue deduzir quais os tipos dos objetos originais?\n\nDICA: A hierarquia original envolve 3 classes e herança"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "D692FC9CE2A94FAD819C95B1C2F48809"
+    },
+    "cell_type" : "markdown",
+    "source" : "## Consultas SQL\n\nAs consultas a seguir devem ser implementadas utilizando SQL"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "3998E59438C44C86B1CBF2F2FBC5183C"
+    },
+    "cell_type" : "code",
+    "source" : "//Criar uma tabela temporaria para permitir a execução das consultas\nprodutos.registerTempTable(\"produtos\")",
+    "outputs" : [ {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 16
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "74A6B12B19E74424A9A24E9871C6853B"
+    },
+    "cell_type" : "code",
+    "source" : "//Listar todos os produtos com preço inferior a 70 \nval produtosBaratos = sqlContext.sql(\"select * from produtos where preco < 70\")\nprodutosBaratos.show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n|ativo|  categoria| id|           marca|              nome|nomeArquivo|preco|tamanho|taxaEntrega|    type|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n| true|  [Livro,1]|  2|Globalcode Press|     Academia Java|       null| 40.0|   null|        3.0|material|\n| true|  [Livro,1]|  3|Globalcode Press|Academia Arquiteto|       null| 45.0|   null|        0.0|material|\n| true|[Blu-ray,2]|  5|Globalcode Press|      Academia Web|       null| 35.0|   null|        0.0|material|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n\nprodutosBaratos: org.apache.spark.sql.DataFrame = [ativo: boolean, categoria: struct<descricao:string,id:bigint>, id: bigint, marca: string, nome: string, nomeArquivo: string, preco: double, tamanho: bigint, taxaEntrega: double, type: string]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 17
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "E7A71566E0F54336837FF2281F0FE5F8"
+    },
+    "cell_type" : "code",
+    "source" : "//Listar todos os produtos da categoria Games.\nval games = sqlContext.sql(\"select * from produtos where categoria.descricao = 'Games'\")\ngames.show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n|ativo|categoria| id|   marca|          nome|nomeArquivo|preco|tamanho|taxaEntrega|   type|\n+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n| true|[Games,5]|  4|Blizzard|    Diablo III|    diablo3|100.0|    500|       null|digital|\n| true|[Games,5]| 12| Bioware|Dragon Age III| dragonage3| 99.0|   1000|       null|digital|\n+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n\ngames: org.apache.spark.sql.DataFrame = [ativo: boolean, categoria: struct<descricao:string,id:bigint>, id: bigint, marca: string, nome: string, nomeArquivo: string, preco: double, tamanho: bigint, taxaEntrega: double, type: string]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 18
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "026F2B007966466C89E47FB078A2CC13"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir todos os produtos do tipo material ordenados por preco.\nval produtosMateriais = \n  sqlContext.sql(\"select * from produtos where type = 'material' order by preco\")\nprodutosMateriais.show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n|ativo|  categoria| id|           marca|              nome|nomeArquivo|preco|tamanho|taxaEntrega|    type|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n| true|[Blu-ray,2]|  5|Globalcode Press|      Academia Web|       null| 35.0|   null|        0.0|material|\n| true|  [Livro,1]|  2|Globalcode Press|     Academia Java|       null| 40.0|   null|        3.0|material|\n| true|  [Livro,1]|  3|Globalcode Press|Academia Arquiteto|       null| 45.0|   null|        0.0|material|\n| true|[Blu-ray,2]|  1|  Marvel Studios|        Vingadores|       null| 89.9|   null|        5.0|material|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n\nprodutosMateriais: org.apache.spark.sql.DataFrame = [ativo: boolean, categoria: struct<descricao:string,id:bigint>, id: bigint, marca: string, nome: string, nomeArquivo: string, preco: double, tamanho: bigint, taxaEntrega: double, type: string]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 19
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "DA991841CE7941BCBB3BF66CA146EB95"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir o total de produtos por categoria\nval totalCategorias = \n  sqlContext.sql(\"\"\"select categoria.descricao, count(*) as total from produtos\n                    group by categoria.descricao\"\"\")\ntotalCategorias.show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+---------+-----+\n|descricao|total|\n+---------+-----+\n|    Livro|    2|\n|    Games|    2|\n|  Blu-ray|    2|\n+---------+-----+\n\ntotalCategorias: org.apache.spark.sql.DataFrame = [descricao: string, total: bigint]\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 20
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "ECD7D63B7C2E41A7857BC3EBA68C5CFC"
+    },
+    "cell_type" : "markdown",
+    "source" : "## Consultas via API de programação\n\nAgora reimplemente as consultas feitas anteriormente utilizando a API de programação"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "39C29B889A1D48378BE4285D9FC28025"
+    },
+    "cell_type" : "code",
+    "source" : "//Listar todos os produtos com preço inferior a 70 \nimport sqlContext.implicits._\nprodutos.where($\"preco\" < 70)\n        .show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n|ativo|  categoria| id|           marca|              nome|nomeArquivo|preco|tamanho|taxaEntrega|    type|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n| true|  [Livro,1]|  2|Globalcode Press|     Academia Java|       null| 40.0|   null|        3.0|material|\n| true|  [Livro,1]|  3|Globalcode Press|Academia Arquiteto|       null| 45.0|   null|        0.0|material|\n| true|[Blu-ray,2]|  5|Globalcode Press|      Academia Web|       null| 35.0|   null|        0.0|material|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n\nimport sqlContext.implicits._\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 21
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "89F7A747B49740FEA15B56E19327CFD3"
+    },
+    "cell_type" : "code",
+    "source" : "//Listar todos os produtos da categoria Games.\nprodutos.where($\"categoria.descricao\" === \"Games\").show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n|ativo|categoria| id|   marca|          nome|nomeArquivo|preco|tamanho|taxaEntrega|   type|\n+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n| true|[Games,5]|  4|Blizzard|    Diablo III|    diablo3|100.0|    500|       null|digital|\n| true|[Games,5]| 12| Bioware|Dragon Age III| dragonage3| 99.0|   1000|       null|digital|\n+-----+---------+---+--------+--------------+-----------+-----+-------+-----------+-------+\n\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 4
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "A1BB62D59C2049DF95C9E910CA651F77"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir todos os produtos do tipo material ordenados por preco.\nprodutos.where($\"type\" === \"material\").orderBy(\"preco\").show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n|ativo|  categoria| id|           marca|              nome|nomeArquivo|preco|tamanho|taxaEntrega|    type|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n| true|[Blu-ray,2]|  5|Globalcode Press|      Academia Web|       null| 35.0|   null|        0.0|material|\n| true|  [Livro,1]|  2|Globalcode Press|     Academia Java|       null| 40.0|   null|        3.0|material|\n| true|  [Livro,1]|  3|Globalcode Press|Academia Arquiteto|       null| 45.0|   null|        0.0|material|\n| true|[Blu-ray,2]|  1|  Marvel Studios|        Vingadores|       null| 89.9|   null|        5.0|material|\n+-----+-----------+---+----------------+------------------+-----------+-----+-------+-----------+--------+\n\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 5
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "72AED55C36A84DBAA2B97E811B1E7E97"
+    },
+    "cell_type" : "code",
+    "source" : "//Imprimir o total de produtos por categoria\nprodutos.groupBy(\"categoria.descricao\").count().show()",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "+---------+-----+\n|descricao|count|\n+---------+-----+\n|    Livro|    2|\n|    Games|    2|\n|  Blu-ray|    2|\n+---------+-----+\n\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 7
+    } ]
+  } ],
+  "nbformat" : 4
+}

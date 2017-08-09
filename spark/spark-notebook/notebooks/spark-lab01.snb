@@ -1,0 +1,138 @@
+{
+  "metadata" : {
+    "name" : "spark-lab",
+    "user_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "auto_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : [ "-Xmx512m" ],
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "id" : "20FCFA5AEF2D4BD380CC97088ABCF686"
+    },
+    "cell_type" : "markdown",
+    "source" : "#Laboratorio 1 - Contagem de palavras com Spark Notebook\n\nVamos utilizar o Spark Notebook para executar um aplicativo de contagem de palavras.\n\nNeste laboratório cada célula corresponde a uma instrução, para que possamos executá-lo passo a passo, mas poderiamos agrupar várias instruções em cada célula.\n\nPara executar o código de cada célula basta selecioná-la e pressionar Ctrl+ENTER ou clicar no botão run (triangulo) na barra de ferramentas.\n\nSeguindo o modelo do objeto OlaMundoSpark apresentado na primeira parte do laboratório, implemente o código pedido a seguir:"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "B8DB24727F474997A1A8AFB4BBC39D67"
+    },
+    "cell_type" : "code",
+    "source" : "//Primeiro vamos carregar o conteudo do arquivo README.MD.\nval input = sc.textFile(\"README.md\")",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "input: org.apache.spark.rdd.RDD[String] = README.md MapPartitionsRDD[1] at textFile at <console>:54\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 6
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "4E69D499766249458A33B16A7A6751F2"
+    },
+    "cell_type" : "code",
+    "source" : "//Agora vamos quebrar o arquivo carregado em uma lista de palavras.\nval words = input.flatMap(line => line.split(\" \"))",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "words: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[2] at flatMap at <console>:56\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 7
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "E7A71566E0F54336837FF2281F0FE5F8"
+    },
+    "cell_type" : "code",
+    "source" : "//O próximo passo é aplicar o algoritmo map/reduce de contagem de palavras conforme visto na apostila.\nval counts = words.map(word => (word, 1)).reduceByKey{(x, y) => x + y}",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "counts: org.apache.spark.rdd.RDD[(String, Int)] = ShuffledRDD[6] at reduceByKey at <console>:58\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 10
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "026F2B007966466C89E47FB078A2CC13"
+    },
+    "cell_type" : "code",
+    "source" : "//Por fim, vamos imprimir cada uma das palavras encontradas e sua respectiva contagem.\ncounts.foreach{case (word,count) => println(f\"$word%20s \\t $count\")}",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "             someone \t 1\n[website](http://metail.com/) \t 1\n[localhost:9000](http://localhost:9000). \t 1\n                 For \t 1\n       collaborative \t 1\n                  it \t 1\n                 The \t 7\n             Mesons, \t 1\n               facts \t 1\n![Vingle](https://s3.amazonaws.com/vingle-assets/Vingle_Wordmark_Red.png) \t 1\n             focused \t 1\n         dashboards. \t 1\n            EMBL-EBI \t 1\n               help, \t 1\n                  kt \t 2\n             through \t 1\n[website](http://www.agilelab.it) \t 1\nLab](http://www.agilelab.it/wp-content/uploads/2015/02/logo1.png) \t 1\n          lifestyle. \t 1\n[website](https://www.swisscom.ch) \t 1\n               offer \t 1\n              health \t 1\n             company \t 3\n           Certified \t 1\n                  To \t 1\n       [reproducible \t 1\n            Scalable \t 1\n               these \t 1\n          supporting \t 1\n                 sbt \t 1\n                Open \t 2\nStatus](https://travis-ci.org/andypetrella/spark-notebook.svg?branch=master)](https://travis-ci.org/andypetrella/spark-notebook) \t 1\n            research \t 1\n                 ### \t 4\n         *Originally \t 1\n                  we \t 2\n                 the \t 21\n                 URL \t 1\n                 fit \t 1\n          refactored \t 1\n                  BI \t 1\n             latest, \t 1\n               shape \t 1\n           different \t 1\n        Switzerland. \t 1\n                This \t 1\n           industry. \t 2\n            Checkout \t 1\n                read \t 1\n             banking \t 1\n            problems \t 1\n            Download \t 1\n                 out \t 2\n                most \t 1\n                  Do \t 1\n                Data \t 2\n                   & \t 2\n           financial \t 1\n                  At \t 1\n          integrator \t 1\n              Spark. \t 1\n                 FOR \t 1\n       intelligence. \t 1\n              clean, \t 1\n                care \t 1\n                tool \t 2\n                file \t 1\n|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| \t 1\n                 but \t 1\n[website](http://www.Amino.com) \t 1\n            performs \t 1\nFellas](http://www.data-fellas.guru/assets/images/logo-wired-small.png) \t 1\n         environment \t 1\n[spark-notebook.io](http://spark-notebook.io/). \t 1\n          rewritten. \t 1\n                run: \t 1\n                NexR \t 2\nEBI](http://www.ebi.ac.uk/miriam/static/main/img/EBI_logo.png) \t 1\n             Dataset \t 1\n            tackling \t 1\n![Amino](https://amino.com/static/img/logos/amino-logo-123x30_2x.png) \t 1\n             London. \t 1\n                when \t 1\n               about \t 2\n                 run \t 2\n             Italian \t 1\n              Apache \t 1\n            provider \t 1\n                  on \t 4\n              ![Data \t 1\n                 our \t 3\n[product](http://market.aliyun.com/products/56014009/jxsc000194.html?spm=5176.900004.4.1.WGc3Ei) \t 1\n             [Apache \t 1\n             ![Agile \t 1\n           identity. \t 1\n             Extract \t 1\n            features \t 1\n            Swisscom \t 2\n[website](http://www.cloudphysics.com) \t 1\n              social \t 1\n[Deeplearning4j](http://Deeplearning4j.org) \t 1\n                Want \t 1\n               Start \t 1\n           [slightly \t 1\n      Bioinformatics \t 1\n            INSIGHTS \t 1\n               2007. \t 1\n                Name \t 1\n                 use \t 1\n            Notebook \t 2\n             running \t 1\n                find \t 1\n             command \t 1\n           directory \t 1\n                  or \t 3\n            [![Build \t 1\n             perform \t 1\n![CloudPhysics](https://www.cloudphysics.com/static/uploads/2014/06/3color_bug_lg.png) \t 1\n           available \t 2\n                code \t 1\n             Skymind \t 2\n                more \t 1\n            academia \t 1\n                 see \t 1\n                  of \t 6\n               FAQs. \t 1\nanalysis](http://simplystatistics.org/2014/06/06/the-real-reason-reproducible-research-is-important/) \t 1\n          management \t 1\n             things, \t 1\n`bin/spark-notebook` \t 1\nNexR](http://ktnexr.com/images/main/kt_h_logo.jpg) \t 1\n[website](http://www.barclays.com) \t 1\n          Databricks \t 1\n           ![Alibaba \t 1\n             leading \t 2\n            Analysis \t 1\n                firm \t 1\n![Barclays](https://www.home.barclays/content/dam/barclayspublic/images/Site%20wide/Barclays%20logo/barclays-logo-desktop.png) \t 1\n        Testimonials \t 1\n              Vinted \t 1\n     visualisations, \t 1\n                  is \t 10\n         Description \t 1\n      configuration, \t 1\n                even \t 1\n[scala-notebook](https://github.com/Bridgewater/scala-notebook), \t 1\n             (Amazon \t 1\n                  Go \t 1\n            outdated \t 1\n            straight \t 1\n[website](http://www.skymind.io) \t 1\n`bin\\spark-notebook` \t 1\n             sources \t 2\n               using \t 1\n   start-of-the-art, \t 1\n                 new \t 1\n                root \t 1\n                  We \t 1\n             window. \t 1\n               gives \t 1\n   docs](details.md) \t 1\n                  ## \t 2\n             details \t 1\n            choices. \t 1\n              allows \t 2\n                  us \t 1\n            learning \t 2\n                body \t 2\n        experiments, \t 1\n     `sparkContext`. \t 1\n              Markup \t 1\n           ecosystem \t 1\n                 Mad \t 1\n           prototype \t 1\n                   | \t 75\n             cluster \t 1\n![Vinted](http://engineering.vinted.com/brandbook/images/logos/vinted.svg) \t 1\n          programme, \t 1\n             browser \t 1\n            geeks)** \t 1\n             Degrees \t 2\n            accessed \t 1\n              Fellas \t 1\n              steps. \t 1\n                  IT \t 1\n             British \t 1\n               Spark \t 9\n[website](http://www.vinted.com/) \t 1\n         researchers \t 1\n       headquartered \t 1\n           extensive \t 1\n                   A \t 1\n[Launch](details.md#launch). \t 1\n         convenient. \t 1\n            scalable \t 1\n            achieved \t 1\n             manner. \t 1\n                ![47 \t 1\n           somewhere \t 1\n              needed \t 1\n                 for \t 2\n             biology \t 1\n              freely \t 1\n                 Lab \t 1\n                your \t 2\n            Skymind, \t 1\n             explain \t 1\n                  47 \t 2\n                 ECS \t 2\n             answers \t 1\n          pipelines. \t 1\n           community \t 1\n                (15+ \t 1\n                demo \t 1\n              editor \t 1\n            analysts \t 1\n[website](http://ktnexr.com) \t 1\n           Institute \t 1\n                  by \t 1\n                like \t 1\n                user \t 1\n                  It \t 1\n               Quick \t 1\n                  an \t 2\n                (for \t 1\n             machine \t 2\n           flexible, \t 1\n             Execute \t 1\n          developers \t 1\n            Barclays \t 2\n                ![kt \t 1\n               more. \t 1\n              forked \t 1\n          everyone’s \t 1\n          performing \t 1\n         DATA-DRIVEN \t 1\n              users) \t 1\n                meet \t 1\n              global \t 1\n             service \t 1\n               code, \t 1\n              YARN), \t 1\n                  in \t 9\n![Swisscom](https://upload.wikimedia.org/wikipedia/en/2/2c/Swisscom_Logo.png) \t 1\n              offers \t 1\n              online \t 1\n                  In \t 1\n              builds \t 1\n                   - \t 3\n          unstable). \t 1\n        cofiguration \t 1\n               we’re \t 1\n              ad-hoc \t 1\n             Partner \t 1\n            queries, \t 2\n             garment \t 1\n[Vinted.com](http://www.vinted.com) \t 1\n              ![EMBL \t 1\n              (*NIX) \t 1\n[website](http://www.data-fellas.guru) \t 1\n            entirely \t 1\n               Amino \t 1\n               C'mon \t 1\n                some \t 2\n                only \t 1\n             complex \t 1\n               basic \t 1\n       documentation \t 1\nDegrees](http://www.47deg.com/assets/logo_148x148.png) \t 1\n[website](http://www.ebi.ac.uk/) \t 1\n               Korea \t 1\n             network \t 1\n          Meanwhile, \t 1\n             Massive \t 1\n              Metail \t 1\n               Agile \t 1\n              mobile \t 1\n            analysis \t 2\n       distribution. \t 1\n            provides \t 1\n           addition, \t 1\n![Skymind](http://skymind.io/wp-content/uploads/2015/02/logo.png) \t 1\n            advanced \t 2\n                 can \t 2\n        CloudPhysics \t 1\n                   > \t 2\n         interactive \t 1\n             science \t 1\n            services \t 1\n               Scala \t 2\n             Cluster \t 1\n            variable \t 1\n       computational \t 1\n            options, \t 1\n                EMR, \t 1\n              Aliyun \t 3\n              create \t 1\n             systems \t 1\n        specializing \t 1\n             (master \t 1\n    terminal/command \t 1\n               start \t 1\n              Change \t 1\n              simply \t 1\n                 one \t 2\n                tech \t 1\n                with \t 1\n                 mix \t 1\n              world. \t 1\n                data \t 4\n                   $ \t 1\n                life \t 1\n                best \t 1\n          consulting \t 1\n             SMARTER \t 1\n[website](https://www.vingle.net) \t 1\n            training \t 1\n![Metail](http://metail.wpengine.com/wp-content/uploads/2013/11/Metail_Logo1.png) \t 1\n             runtime \t 1\n           web-based \t 1\n                from \t 4\n               **Run \t 1\n                 try \t 1\n             amazing \t 1\n[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/andypetrella/spark-notebook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) \t 1\n                 way \t 2\n            expanded \t 1\n              Online \t 1\n       contributing! \t 1\n               prose \t 1\n                box, \t 1\n       multinational \t 1\n                 you \t 1\n          customers. \t 1\n                that \t 1\n                   a \t 6\n          JavaScript \t 1\n[website](http://www.47deg.com) \t 1\n             empower \t 1\n                  to \t 16\n         marketplace \t 1\n                you. \t 1\n               where \t 1\n[Gitter](https://gitter.im/andypetrella/spark-notebook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) \t 1\n            European \t 1\n               power \t 1\n          deployment \t 1\n                 and \t 20\n               being \t 1\n           certified \t 1\n            Typesafe \t 1\n                Logo \t 1\n             combine \t 1\n              Vingle \t 2\n             options \t 1\n             women’s \t 1\n             Science \t 1\n          (Windows). \t 1\n               Learn \t 1\n             discuss \t 1\nSpark](http://spark.apache.org).* \t 1\n                deep \t 1\n               this. \t 1\n                 SQL \t 1\n                EMBL \t 1\n              useful \t 1\n            Adopters \t 1\n                 get \t 2\n                     \t 4120\n                   * \t 7\n           Notebook? \t 1\nECS](http://gtms02.alicdn.com/tps/i2/T1J0xIFMteXXX4dCTl-220-72.png) \t 1\n              Scala, \t 1\n              almost \t 1\n           Computing \t 1\n             BigData \t 1\n      ============== \t 1\n               young \t 1\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 11
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "9D06C232509B46B2BBF925343C9A7F66"
+    },
+    "cell_type" : "code",
+    "source" : "",
+    "outputs" : [ {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 5
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "6F0FBAB0DE0244058069FB64D03CBD2C"
+    },
+    "cell_type" : "code",
+    "source" : "",
+    "outputs" : [ ]
+  } ],
+  "nbformat" : 4
+}

@@ -1,0 +1,223 @@
+2017-07-01 14:10:22,977  INFO [main] (notebook.kernel.pfork.BetterFork$) - Remote process starting
+2017-07-01 14:10:24,063  INFO [Remote-akka.actor.default-dispatcher-2] (akka.event.slf4j.Slf4jLogger) - Slf4jLogger started
+2017-07-01 14:10:24,218  INFO [Remote-akka.actor.default-dispatcher-2] (Remoting) - Starting remoting
+2017-07-01 14:10:24,579  INFO [Remote-akka.actor.default-dispatcher-2] (Remoting) - Remoting started; listening on addresses :[akka.tcp://Remote@127.0.0.1:52374]
+2017-07-01 14:10:24,581  INFO [Remote-akka.actor.default-dispatcher-2] (Remoting) - Remoting now listens on addresses: [akka.tcp://Remote@127.0.0.1:52374]
+2017-07-01 14:10:26,079  INFO [Remote-akka.actor.default-dispatcher-5] (notebook.client.ReplCalculator) - ReplCalculator preStart
+2017-07-01 14:10:26,091  INFO [Remote-akka.actor.default-dispatcher-5] (notebook.client.ReplCalculator) -  INIT SCRIPT: dummy
+2017-07-01 14:10:28,515  WARN [Remote-akka.actor.default-dispatcher-2] (org.apache.hadoop.util.NativeCodeLoader) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-07-01 14:10:28,938  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - Changing view acls to: turmasabado
+2017-07-01 14:10:28,947  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - Changing modify acls to: turmasabado
+2017-07-01 14:10:28,954  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(turmasabado); users with modify permissions: Set(turmasabado)
+2017-07-01 14:10:29,650  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.HttpServer) - Starting HTTP Server
+2017-07-01 14:10:29,896  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.Server) - jetty-8.y.z-SNAPSHOT
+2017-07-01 14:10:29,957  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.AbstractConnector) - Started SocketConnector@0.0.0.0:34648
+2017-07-01 14:10:29,959  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'HTTP server' on port 34648.
+2017-07-01 14:10:43,839  WARN [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Your hostname, globalcode-labs resolves to a loopback address: 127.0.1.1; using 192.168.1.114 instead (on interface wlan0)
+2017-07-01 14:10:43,842  WARN [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Set SPARK_LOCAL_IP if you need to bind to another address
+2017-07-01 14:10:44,626  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) - Init script processed successfully
+2017-07-01 14:10:44,630  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) -  INIT SCRIPT: class server
+2017-07-01 14:10:45,117  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) - Init script processed successfully
+2017-07-01 14:10:45,118  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) -  INIT SCRIPT: deps
+2017-07-01 14:10:45,714  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) - Init script processed successfully
+2017-07-01 14:10:45,716  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) -  INIT SCRIPT: imports
+2017-07-01 14:10:45,723  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) -  INIT SCRIPT: custom conf
+2017-07-01 14:10:47,225  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) - Init script processed successfully
+2017-07-01 14:10:47,225  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) -  INIT SCRIPT: jar:file:/home/turmasabado/spark-notebook/lib/nooostab.spark-notebook-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar!/scripts/init.sc
+2017-07-01 14:10:52,531  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkContext) - Running Spark version 1.6.1
+2017-07-01 14:10:52,632  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - Changing view acls to: turmasabado
+2017-07-01 14:10:52,632  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - Changing modify acls to: turmasabado
+2017-07-01 14:10:52,632  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SecurityManager) - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(turmasabado); users with modify permissions: Set(turmasabado)
+2017-07-01 14:10:53,429  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'sparkDriver' on port 51525.
+2017-07-01 14:10:53,571  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-4] (akka.event.slf4j.Slf4jLogger) - Slf4jLogger started
+2017-07-01 14:10:53,579  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-2] (Remoting) - Starting remoting
+2017-07-01 14:10:53,620  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-5] (Remoting) - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.1.114:38168]
+2017-07-01 14:10:53,624  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'sparkDriverActorSystem' on port 38168.
+2017-07-01 14:10:53,653  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkEnv) - Registering MapOutputTracker
+2017-07-01 14:10:53,735  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkEnv) - Registering BlockManagerMaster
+2017-07-01 14:10:53,777  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.storage.DiskBlockManager) - Created local directory at /tmp/blockmgr-90307460-898e-4064-a0a4-dc0f6a5074e9
+2017-07-01 14:10:53,804  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.storage.MemoryStore) - MemoryStore started with capacity 116.4 MB
+2017-07-01 14:10:53,975  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkEnv) - Registering OutputCommitCoordinator
+2017-07-01 14:10:54,411  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.Server) - jetty-8.y.z-SNAPSHOT
+2017-07-01 14:10:54,532  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.AbstractConnector) - Started SelectChannelConnector@0.0.0.0:4040
+2017-07-01 14:10:54,533  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'SparkUI' on port 4040.
+2017-07-01 14:10:54,548  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.ui.SparkUI) - Started SparkUI at http://192.168.1.114:4040
+2017-07-01 14:10:54,618  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.HttpFileServer) - HTTP File server directory is /tmp/spark-89b726a6-8fc8-4bf7-9213-13700ee1e24f/httpd-d0e8f1ec-890e-4f8b-85be-dc9945bac39d
+2017-07-01 14:10:54,619  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.HttpServer) - Starting HTTP Server
+2017-07-01 14:10:54,620  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.Server) - jetty-8.y.z-SNAPSHOT
+2017-07-01 14:10:54,626  INFO [Remote-akka.actor.default-dispatcher-2] (org.spark-project.jetty.server.AbstractConnector) - Started SocketConnector@0.0.0.0:41565
+2017-07-01 14:10:54,626  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'HTTP file server' on port 41565.
+2017-07-01 14:10:54,631 ERROR [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkContext) - Error adding jar (java.lang.IllegalArgumentException: /home/turmasabado/spark-notebook cannot be a directory.), was the --addJars option used?
+2017-07-01 14:10:54,770  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkContext) - Added JAR file:/home/turmasabado/spark-notebook/lib/common.common-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar at http://192.168.1.114:41565/jars/common.common-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar with timestamp 1498929054768
+2017-07-01 14:10:55,031  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.executor.Executor) - Starting executor ID driver on host localhost
+2017-07-01 14:10:55,066  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.executor.Executor) - Using REPL class URI: http://192.168.1.114:34648
+2017-07-01 14:10:55,150  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.util.Utils) - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55738.
+2017-07-01 14:10:55,153  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.network.netty.NettyBlockTransferService) - Server created on 55738
+2017-07-01 14:10:55,162  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.storage.BlockManagerMaster) - Trying to register BlockManager
+2017-07-01 14:10:55,171  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerMasterEndpoint) - Registering block manager localhost:55738 with 116.4 MB RAM, BlockManagerId(driver, localhost, 55738)
+2017-07-01 14:10:55,178  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.storage.BlockManagerMaster) - Registered BlockManager
+2017-07-01 14:10:58,510  INFO [Remote-akka.actor.default-dispatcher-4] (notebook.client.ReplCalculator) - Init script processed successfully
+2017-07-01 14:11:14,272  WARN [Remote-akka.actor.default-dispatcher-5] (org.apache.spark.util.SizeEstimator) - Failed to check whether UseCompressedOops is set; assuming yes
+2017-07-01 14:11:14,675  INFO [Remote-akka.actor.default-dispatcher-5] (org.apache.spark.storage.MemoryStore) - Block broadcast_0 stored as values in memory (estimated size 115.6 KB, free 115.6 KB)
+2017-07-01 14:11:14,815  INFO [Remote-akka.actor.default-dispatcher-5] (org.apache.spark.storage.MemoryStore) - Block broadcast_0_piece0 stored as bytes in memory (estimated size 14.1 KB, free 129.7 KB)
+2017-07-01 14:11:14,818  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerInfo) - Added broadcast_0_piece0 in memory on localhost:55738 (size: 14.1 KB, free: 116.4 MB)
+2017-07-01 14:11:14,832  INFO [Remote-akka.actor.default-dispatcher-5] (org.apache.spark.SparkContext) - Created broadcast 0 from textFile at <console>:54
+2017-07-01 14:12:15,313  INFO [Remote-akka.actor.default-dispatcher-17] (org.apache.hadoop.mapred.FileInputFormat) - Total input paths to process : 1
+2017-07-01 14:12:20,888  INFO [Remote-akka.actor.default-dispatcher-17] (org.apache.spark.SparkContext) - Starting job: foreach at <console>:62
+2017-07-01 14:12:21,031  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Registering RDD 3 (map at <console>:58)
+2017-07-01 14:12:21,040  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Got job 0 (foreach at <console>:62) with 2 output partitions
+2017-07-01 14:12:21,041  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Final stage: ResultStage 1 (foreach at <console>:62)
+2017-07-01 14:12:21,042  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Parents of final stage: List(ShuffleMapStage 0)
+2017-07-01 14:12:21,048  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Missing parents: List(ShuffleMapStage 0)
+2017-07-01 14:12:21,071  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at <console>:58), which has no missing parents
+2017-07-01 14:12:21,282  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_1 stored as values in memory (estimated size 4.1 KB, free 133.8 KB)
+2017-07-01 14:12:21,293  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.2 KB, free 136.0 KB)
+2017-07-01 14:12:21,298  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerInfo) - Added broadcast_1_piece0 in memory on localhost:55738 (size: 2.2 KB, free: 116.4 MB)
+2017-07-01 14:12:21,300  INFO [dag-scheduler-event-loop] (org.apache.spark.SparkContext) - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2017-07-01 14:12:21,309  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at <console>:58)
+2017-07-01 14:12:21,314  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.TaskSchedulerImpl) - Adding task set 0.0 with 2 tasks
+2017-07-01 14:12:21,450  INFO [dispatcher-event-loop-1] (org.apache.spark.scheduler.TaskSetManager) - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2183 bytes)
+2017-07-01 14:12:21,470  INFO [dispatcher-event-loop-1] (org.apache.spark.scheduler.TaskSetManager) - Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2183 bytes)
+2017-07-01 14:12:21,501  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Running task 0.0 in stage 0.0 (TID 0)
+2017-07-01 14:12:21,501  INFO [Executor task launch worker-1] (org.apache.spark.executor.Executor) - Running task 1.0 in stage 0.0 (TID 1)
+2017-07-01 14:12:21,518  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Fetching http://192.168.1.114:41565/jars/common.common-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar with timestamp 1498929054768
+2017-07-01 14:12:21,747  INFO [Executor task launch worker-0] (org.apache.spark.util.Utils) - Fetching http://192.168.1.114:41565/jars/common.common-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar to /tmp/spark-89b726a6-8fc8-4bf7-9213-13700ee1e24f/userFiles-8e10864a-9a69-49ba-bd04-67d79581054b/fetchFileTemp4801039380011629008.tmp
+2017-07-01 14:12:21,858  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Adding file:/tmp/spark-89b726a6-8fc8-4bf7-9213-13700ee1e24f/userFiles-8e10864a-9a69-49ba-bd04-67d79581054b/common.common-0.6.3-scala-2.11.7-spark-1.6.1-hadoop-2.6.4-with-hive-with-parquet.jar to class loader
+2017-07-01 14:12:21,912  INFO [Executor task launch worker-0] (org.apache.spark.rdd.HadoopRDD) - Input split: file:/home/turmasabado/spark-notebook/README.md:0+5200
+2017-07-01 14:12:21,916  INFO [Executor task launch worker-1] (org.apache.spark.rdd.HadoopRDD) - Input split: file:/home/turmasabado/spark-notebook/README.md:5200+5201
+2017-07-01 14:12:22,027  INFO [Executor task launch worker-0] (org.apache.hadoop.conf.Configuration.deprecation) - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2017-07-01 14:12:22,027  INFO [Executor task launch worker-0] (org.apache.hadoop.conf.Configuration.deprecation) - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2017-07-01 14:12:22,027  INFO [Executor task launch worker-0] (org.apache.hadoop.conf.Configuration.deprecation) - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2017-07-01 14:12:22,027  INFO [Executor task launch worker-0] (org.apache.hadoop.conf.Configuration.deprecation) - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2017-07-01 14:12:22,027  INFO [Executor task launch worker-0] (org.apache.hadoop.conf.Configuration.deprecation) - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2017-07-01 14:12:22,566  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Finished task 0.0 in stage 0.0 (TID 0). 2254 bytes result sent to driver
+2017-07-01 14:12:22,569  INFO [Executor task launch worker-1] (org.apache.spark.executor.Executor) - Finished task 1.0 in stage 0.0 (TID 1). 2254 bytes result sent to driver
+2017-07-01 14:12:22,627  INFO [task-result-getter-0] (org.apache.spark.scheduler.TaskSetManager) - Finished task 0.0 in stage 0.0 (TID 0) in 1216 ms on localhost (1/2)
+2017-07-01 14:12:22,628  INFO [task-result-getter-1] (org.apache.spark.scheduler.TaskSetManager) - Finished task 1.0 in stage 0.0 (TID 1) in 1164 ms on localhost (2/2)
+2017-07-01 14:12:22,635  INFO [task-result-getter-1] (org.apache.spark.scheduler.TaskSchedulerImpl) - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2017-07-01 14:12:22,640  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - ShuffleMapStage 0 (map at <console>:58) finished in 1,290 s
+2017-07-01 14:12:22,642  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - looking for newly runnable stages
+2017-07-01 14:12:22,643  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - running: Set()
+2017-07-01 14:12:22,652  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - waiting: Set(ResultStage 1)
+2017-07-01 14:12:22,653  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - failed: Set()
+2017-07-01 14:12:22,655  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting ResultStage 1 (ShuffledRDD[4] at reduceByKey at <console>:58), which has no missing parents
+2017-07-01 14:12:22,691  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_2 stored as values in memory (estimated size 2.5 KB, free 138.6 KB)
+2017-07-01 14:12:22,700  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_2_piece0 stored as bytes in memory (estimated size 1503.0 B, free 140.0 KB)
+2017-07-01 14:12:22,705  INFO [dispatcher-event-loop-1] (org.apache.spark.storage.BlockManagerInfo) - Added broadcast_2_piece0 in memory on localhost:55738 (size: 1503.0 B, free: 116.4 MB)
+2017-07-01 14:12:22,707  INFO [dag-scheduler-event-loop] (org.apache.spark.SparkContext) - Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+2017-07-01 14:12:22,712  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting 2 missing tasks from ResultStage 1 (ShuffledRDD[4] at reduceByKey at <console>:58)
+2017-07-01 14:12:22,712  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.TaskSchedulerImpl) - Adding task set 1.0 with 2 tasks
+2017-07-01 14:12:22,737  INFO [dispatcher-event-loop-0] (org.apache.spark.scheduler.TaskSetManager) - Starting task 0.0 in stage 1.0 (TID 2, localhost, partition 0,NODE_LOCAL, 1939 bytes)
+2017-07-01 14:12:22,738  INFO [dispatcher-event-loop-0] (org.apache.spark.scheduler.TaskSetManager) - Starting task 1.0 in stage 1.0 (TID 3, localhost, partition 1,NODE_LOCAL, 1939 bytes)
+2017-07-01 14:12:22,740  INFO [Executor task launch worker-1] (org.apache.spark.executor.Executor) - Running task 0.0 in stage 1.0 (TID 2)
+2017-07-01 14:12:22,745  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Running task 1.0 in stage 1.0 (TID 3)
+2017-07-01 14:12:22,776  INFO [Executor task launch worker-1] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Getting 2 non-empty blocks out of 2 blocks
+2017-07-01 14:12:22,785  INFO [Executor task launch worker-1] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Started 0 remote fetches in 16 ms
+2017-07-01 14:12:22,776  INFO [Executor task launch worker-0] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Getting 2 non-empty blocks out of 2 blocks
+2017-07-01 14:12:22,785  INFO [Executor task launch worker-0] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Started 0 remote fetches in 16 ms
+2017-07-01 14:12:23,022  INFO [Executor task launch worker-0] (org.apache.spark.executor.Executor) - Finished task 1.0 in stage 1.0 (TID 3). 1165 bytes result sent to driver
+2017-07-01 14:12:23,030  INFO [Executor task launch worker-1] (org.apache.spark.executor.Executor) - Finished task 0.0 in stage 1.0 (TID 2). 1165 bytes result sent to driver
+2017-07-01 14:12:23,054  INFO [task-result-getter-2] (org.apache.spark.scheduler.TaskSetManager) - Finished task 1.0 in stage 1.0 (TID 3) in 314 ms on localhost (1/2)
+2017-07-01 14:12:23,067  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - ResultStage 1 (foreach at <console>:62) finished in 0,330 s
+2017-07-01 14:12:23,077  INFO [task-result-getter-3] (org.apache.spark.scheduler.TaskSetManager) - Finished task 0.0 in stage 1.0 (TID 2) in 326 ms on localhost (2/2)
+2017-07-01 14:12:23,077  INFO [task-result-getter-3] (org.apache.spark.scheduler.TaskSchedulerImpl) - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2017-07-01 14:12:23,118  INFO [Remote-akka.actor.default-dispatcher-17] (org.apache.spark.scheduler.DAGScheduler) - Job 0 finished: foreach at <console>:62, took 2,229549 s
+2017-07-01 14:12:25,267  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerInfo) - Removed broadcast_2_piece0 on localhost:55738 in memory (size: 1503.0 B, free: 116.4 MB)
+2017-07-01 14:12:25,304  INFO [Spark Context Cleaner] (org.apache.spark.ContextCleaner) - Cleaned accumulator 2
+2017-07-01 14:12:25,313  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerInfo) - Removed broadcast_1_piece0 on localhost:55738 in memory (size: 2.2 KB, free: 116.4 MB)
+2017-07-01 14:12:25,318  INFO [Spark Context Cleaner] (org.apache.spark.ContextCleaner) - Cleaned accumulator 1
+2017-07-01 14:49:13,773  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.SparkContext) - Starting job: foreach at <console>:62
+2017-07-01 14:49:13,780  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Registering RDD 5 (map at <console>:58)
+2017-07-01 14:49:13,780  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Got job 1 (foreach at <console>:62) with 2 output partitions
+2017-07-01 14:49:13,780  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Final stage: ResultStage 3 (foreach at <console>:62)
+2017-07-01 14:49:13,780  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Parents of final stage: List(ShuffleMapStage 2)
+2017-07-01 14:49:13,780  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Missing parents: List(ShuffleMapStage 2)
+2017-07-01 14:49:13,781  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting ShuffleMapStage 2 (MapPartitionsRDD[5] at map at <console>:58), which has no missing parents
+2017-07-01 14:49:13,819  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_3 stored as values in memory (estimated size 4.1 KB, free 133.8 KB)
+2017-07-01 14:49:13,826  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.2 KB, free 136.0 KB)
+2017-07-01 14:49:13,827  INFO [dispatcher-event-loop-0] (org.apache.spark.storage.BlockManagerInfo) - Added broadcast_3_piece0 in memory on localhost:55738 (size: 2.2 KB, free: 116.4 MB)
+2017-07-01 14:49:13,830  INFO [dag-scheduler-event-loop] (org.apache.spark.SparkContext) - Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+2017-07-01 14:49:13,837  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[5] at map at <console>:58)
+2017-07-01 14:49:13,838  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.TaskSchedulerImpl) - Adding task set 2.0 with 2 tasks
+2017-07-01 14:49:13,852  INFO [dispatcher-event-loop-1] (org.apache.spark.scheduler.TaskSetManager) - Starting task 0.0 in stage 2.0 (TID 4, localhost, partition 0,PROCESS_LOCAL, 2183 bytes)
+2017-07-01 14:49:13,852  INFO [dispatcher-event-loop-1] (org.apache.spark.scheduler.TaskSetManager) - Starting task 1.0 in stage 2.0 (TID 5, localhost, partition 1,PROCESS_LOCAL, 2183 bytes)
+2017-07-01 14:49:13,860  INFO [Executor task launch worker-2] (org.apache.spark.executor.Executor) - Running task 0.0 in stage 2.0 (TID 4)
+2017-07-01 14:49:13,862  INFO [Executor task launch worker-3] (org.apache.spark.executor.Executor) - Running task 1.0 in stage 2.0 (TID 5)
+2017-07-01 14:49:13,875  INFO [Executor task launch worker-2] (org.apache.spark.rdd.HadoopRDD) - Input split: file:/home/turmasabado/spark-notebook/README.md:0+5200
+2017-07-01 14:49:13,876  INFO [Executor task launch worker-3] (org.apache.spark.rdd.HadoopRDD) - Input split: file:/home/turmasabado/spark-notebook/README.md:5200+5201
+2017-07-01 14:49:13,967  INFO [Executor task launch worker-2] (org.apache.spark.executor.Executor) - Finished task 0.0 in stage 2.0 (TID 4). 2254 bytes result sent to driver
+2017-07-01 14:49:13,967  INFO [Executor task launch worker-3] (org.apache.spark.executor.Executor) - Finished task 1.0 in stage 2.0 (TID 5). 2254 bytes result sent to driver
+2017-07-01 14:49:13,972  INFO [task-result-getter-0] (org.apache.spark.scheduler.TaskSetManager) - Finished task 0.0 in stage 2.0 (TID 4) in 131 ms on localhost (1/2)
+2017-07-01 14:49:13,973  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - ShuffleMapStage 2 (map at <console>:58) finished in 0,124 s
+2017-07-01 14:49:13,973  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - looking for newly runnable stages
+2017-07-01 14:49:13,973  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - running: Set()
+2017-07-01 14:49:13,974  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - waiting: Set(ResultStage 3)
+2017-07-01 14:49:13,974  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - failed: Set()
+2017-07-01 14:49:13,974  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting ResultStage 3 (ShuffledRDD[6] at reduceByKey at <console>:58), which has no missing parents
+2017-07-01 14:49:13,980  INFO [task-result-getter-1] (org.apache.spark.scheduler.TaskSetManager) - Finished task 1.0 in stage 2.0 (TID 5) in 121 ms on localhost (2/2)
+2017-07-01 14:49:13,981  INFO [task-result-getter-1] (org.apache.spark.scheduler.TaskSchedulerImpl) - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2017-07-01 14:49:13,987  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_4 stored as values in memory (estimated size 2.5 KB, free 138.6 KB)
+2017-07-01 14:49:13,990  INFO [dag-scheduler-event-loop] (org.apache.spark.storage.MemoryStore) - Block broadcast_4_piece0 stored as bytes in memory (estimated size 1493.0 B, free 140.0 KB)
+2017-07-01 14:49:13,992  INFO [dispatcher-event-loop-1] (org.apache.spark.storage.BlockManagerInfo) - Added broadcast_4_piece0 in memory on localhost:55738 (size: 1493.0 B, free: 116.4 MB)
+2017-07-01 14:49:13,995  INFO [dag-scheduler-event-loop] (org.apache.spark.SparkContext) - Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+2017-07-01 14:49:13,996  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - Submitting 2 missing tasks from ResultStage 3 (ShuffledRDD[6] at reduceByKey at <console>:58)
+2017-07-01 14:49:13,996  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.TaskSchedulerImpl) - Adding task set 3.0 with 2 tasks
+2017-07-01 14:49:13,999  INFO [dispatcher-event-loop-0] (org.apache.spark.scheduler.TaskSetManager) - Starting task 0.0 in stage 3.0 (TID 6, localhost, partition 0,NODE_LOCAL, 1939 bytes)
+2017-07-01 14:49:14,000  INFO [dispatcher-event-loop-0] (org.apache.spark.scheduler.TaskSetManager) - Starting task 1.0 in stage 3.0 (TID 7, localhost, partition 1,NODE_LOCAL, 1939 bytes)
+2017-07-01 14:49:14,002  INFO [Executor task launch worker-3] (org.apache.spark.executor.Executor) - Running task 0.0 in stage 3.0 (TID 6)
+2017-07-01 14:49:14,006  INFO [Executor task launch worker-3] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Getting 2 non-empty blocks out of 2 blocks
+2017-07-01 14:49:14,006  INFO [Executor task launch worker-3] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Started 0 remote fetches in 1 ms
+2017-07-01 14:49:14,009  INFO [Executor task launch worker-2] (org.apache.spark.executor.Executor) - Running task 1.0 in stage 3.0 (TID 7)
+2017-07-01 14:49:14,011  INFO [Executor task launch worker-2] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Getting 2 non-empty blocks out of 2 blocks
+2017-07-01 14:49:14,011  INFO [Executor task launch worker-2] (org.apache.spark.storage.ShuffleBlockFetcherIterator) - Started 0 remote fetches in 0 ms
+2017-07-01 14:49:14,173  INFO [Executor task launch worker-3] (org.apache.spark.executor.Executor) - Finished task 0.0 in stage 3.0 (TID 6). 1165 bytes result sent to driver
+2017-07-01 14:49:14,178  INFO [task-result-getter-2] (org.apache.spark.scheduler.TaskSetManager) - Finished task 0.0 in stage 3.0 (TID 6) in 181 ms on localhost (1/2)
+2017-07-01 14:49:14,184  INFO [Executor task launch worker-2] (org.apache.spark.executor.Executor) - Finished task 1.0 in stage 3.0 (TID 7). 1165 bytes result sent to driver
+2017-07-01 14:49:14,190  INFO [task-result-getter-3] (org.apache.spark.scheduler.TaskSetManager) - Finished task 1.0 in stage 3.0 (TID 7) in 191 ms on localhost (2/2)
+2017-07-01 14:49:14,190  INFO [task-result-getter-3] (org.apache.spark.scheduler.TaskSchedulerImpl) - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2017-07-01 14:49:14,190  INFO [dag-scheduler-event-loop] (org.apache.spark.scheduler.DAGScheduler) - ResultStage 3 (foreach at <console>:62) finished in 0,193 s
+2017-07-01 14:49:14,191  INFO [Remote-akka.actor.default-dispatcher-2] (org.apache.spark.scheduler.DAGScheduler) - Job 1 finished: foreach at <console>:62, took 0,417574 s
+2017-07-01 14:49:15,338  INFO [dispatcher-event-loop-1] (org.apache.spark.storage.BlockManagerInfo) - Removed broadcast_4_piece0 on localhost:55738 in memory (size: 1493.0 B, free: 116.4 MB)
+2017-07-01 14:49:15,362  INFO [Spark Context Cleaner] (org.apache.spark.ContextCleaner) - Cleaned accumulator 4
+2017-07-01 14:49:15,365  INFO [dispatcher-event-loop-1] (org.apache.spark.storage.BlockManagerInfo) - Removed broadcast_3_piece0 on localhost:55738 in memory (size: 2.2 KB, free: 116.4 MB)
+2017-07-01 14:49:15,374  INFO [Spark Context Cleaner] (org.apache.spark.ContextCleaner) - Cleaned accumulator 3
+2017-07-01 15:37:03,228  INFO [Thread-1] (org.apache.spark.SparkContext) - Invoking stop() from shutdown hook
+2017-07-01 15:37:03,268  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2017-07-01 15:37:03,269  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2017-07-01 15:37:03,271  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/api,null}
+2017-07-01 15:37:03,271  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/,null}
+2017-07-01 15:37:03,271  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/static,null}
+2017-07-01 15:37:03,272  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2017-07-01 15:37:03,272  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2017-07-01 15:37:03,272  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2017-07-01 15:37:03,273  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2017-07-01 15:37:03,273  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2017-07-01 15:37:03,274  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2017-07-01 15:37:03,275  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2017-07-01 15:37:03,275  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2017-07-01 15:37:03,276  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2017-07-01 15:37:03,276  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2017-07-01 15:37:03,277  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2017-07-01 15:37:03,278  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2017-07-01 15:37:03,278  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2017-07-01 15:37:03,278  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2017-07-01 15:37:03,289  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2017-07-01 15:37:03,289  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2017-07-01 15:37:03,291  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2017-07-01 15:37:03,291  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2017-07-01 15:37:03,291  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2017-07-01 15:37:03,292  INFO [Thread-1] (org.spark-project.jetty.server.handler.ContextHandler) - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2017-07-01 15:37:03,350  INFO [Thread-1] (org.apache.spark.ui.SparkUI) - Stopped Spark web UI at http://192.168.1.114:4040
+2017-07-01 15:37:03,414  INFO [dispatcher-event-loop-0] (org.apache.spark.MapOutputTrackerMasterEndpoint) - MapOutputTrackerMasterEndpoint stopped!
+2017-07-01 15:37:03,447  INFO [Thread-1] (org.apache.spark.storage.MemoryStore) - MemoryStore cleared
+2017-07-01 15:37:03,454  INFO [Thread-1] (org.apache.spark.storage.BlockManager) - BlockManager stopped
+2017-07-01 15:37:03,459  INFO [Thread-1] (org.apache.spark.storage.BlockManagerMaster) - BlockManagerMaster stopped
+2017-07-01 15:37:03,477  INFO [dispatcher-event-loop-0] (org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint) - OutputCommitCoordinator stopped!
+2017-07-01 15:37:03,497  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-6] (akka.remote.RemoteActorRefProvider$RemotingTerminator) - Shutting down remote daemon.
+2017-07-01 15:37:03,526  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-21] (akka.remote.RemoteActorRefProvider$RemotingTerminator) - Remote daemon shut down; proceeding with flushing remote transports.
+2017-07-01 15:37:03,545  INFO [Thread-1] (org.apache.spark.SparkContext) - Successfully stopped SparkContext
+2017-07-01 15:37:03,556  INFO [Thread-1] (org.apache.spark.util.ShutdownHookManager) - Shutdown hook called
+2017-07-01 15:37:03,561  INFO [Thread-1] (org.apache.spark.util.ShutdownHookManager) - Deleting directory /tmp/spark-89b726a6-8fc8-4bf7-9213-13700ee1e24f
+2017-07-01 15:37:03,565  INFO [Thread-1] (org.apache.spark.util.ShutdownHookManager) - Deleting directory /tmp/spark-89b726a6-8fc8-4bf7-9213-13700ee1e24f/httpd-d0e8f1ec-890e-4f8b-85be-dc9945bac39d
+2017-07-01 15:37:03,565  INFO [Thread-1] (org.apache.spark.util.ShutdownHookManager) - Deleting directory /tmp/spark-notebook-repl-c105a079-b931-4095-a430-f40916070edf
+2017-07-01 15:37:03,644  INFO [sparkDriverActorSystem-akka.actor.default-dispatcher-20] (akka.remote.RemoteActorRefProvider$RemotingTerminator) - Remoting shut down.

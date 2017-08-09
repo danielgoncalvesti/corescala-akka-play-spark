@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0mAlunosSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mo object Alunos[0m
+[0m[[0minfo[0m] [0m  [32m+[0m encontrar todos os alunos maiores de idade[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar uma lista apenas com os nomes dos alunos[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar uma lista com os nomes dos alunos maiores de idade[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar uma nova lista, com a media de todos os alunos calculada[0m
+[0m[[0minfo[0m] [0m  [32m+[0m lancar erro se algum aluno nao tiver 3 notas[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification AlunosSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 96 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m5 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

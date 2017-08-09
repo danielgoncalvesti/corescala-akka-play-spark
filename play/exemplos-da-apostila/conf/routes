@@ -1,0 +1,36 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET		/cookies/salvar					controllers.CookieController.salvaCookie
+GET		/cookies/remover				controllers.CookieController.removeCookie
+GET		/cookies/listar					controllers.CookieController.leCookie
+
+GET		/session/salvar					controllers.SessionController.adiciona(nome,valor)
+GET     /session/remover				controllers.SessionController.remove(nome)
+GET		/session/listar					controllers.SessionController.lista
+GET     /session/limpar					controllers.SessionController.limpa
+
+GET	    /demos							controllers.DemoController.index(visitas:Int ?= 1)
+GET		/demos/forms					controllers.DemoController.testeFormularios
+GET	    /demos/atores					controllers.DemoController.atores
+
+GET		/produtos/salvar				controllers.ProdutoController.insereProdutos
+
+GET     /itens							controllers.ItemController.index
+GET	    /itens/novo						controllers.ItemController.novoItem
+POST	/itens							controllers.ItemController.salvarItem
+
+GET		/livros/:isbn			    	controllers.LivroController.find(isbn)
+GET		/livros				    		controllers.LivroController.find(isbn)
+GET     /produtos/:id              		controllers.ProdutoController.find(id:Int)
+GET     /produtos      					controllers.ProdutoController.list(page:Int ?= 1)
+GET     /api/produtos	      			controllers.ProdutoController.get(version:Option[String])
+GET     /produtosCod/$codigo<cod[0-9]+>    controllers.ProdutoController.getByCodigo(codigo)
+GET     /files/*file      				controllers.FileController.load(file)
+#GET     /files	      					controllers.FileController.load(path="/public")
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

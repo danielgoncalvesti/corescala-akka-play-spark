@@ -1,0 +1,4 @@
+titulo.index = Lista de itens cadastrados
+link.itemForm = Cadastrar novo item
+titulo.itemForm = Cadastro de Item
+botaoSubmit = Enviar

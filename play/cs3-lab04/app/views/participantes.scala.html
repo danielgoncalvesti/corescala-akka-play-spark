@@ -1,0 +1,14 @@
+@(participantes: List[Participante])
+
+<h2>Lista de Participantes</h2>
+<ul>
+
+@participantes.map { participante =>
+
+<li>   @participante.nome @participante.email</li>
+
+
+}
+</ul>
+
+

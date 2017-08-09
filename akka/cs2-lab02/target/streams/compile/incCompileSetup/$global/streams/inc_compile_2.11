@@ -1,0 +1,272 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+11 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/ColetorParticipantes$$anonfun$receive$1.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/ColetorParticipantes.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/GetParticipantes$.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/GetParticipantes.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/Participante$.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/Participante.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$$anonfun$1$$anonfun$applyOrElse$1.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$$anonfun$1.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$delayedInit$body.class
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor.class
+binary dependencies:
+6 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /home/turmasabado/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> /java/jdk1.8.0_11/jre/lib/rt.jar
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /java/jdk1.8.0_11/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+1 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> /home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+11 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.ColetorParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.ColetorParticipantes$$anonfun$receive$1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.GetParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.GetParticipantes$
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.Participante
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala.Participante$
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala.SistemaColetor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala.SistemaColetor$
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala.SistemaColetor$$anonfun$1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala.SistemaColetor$$anonfun$1$$anonfun$applyOrElse$1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala.SistemaColetor$delayedInit$body
+used names:
+117 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> !
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> &&
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> +=
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> <init>
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> ==
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> A1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> AbstractFunction1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Actor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> ArrayBuffer
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> B1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> ColetorParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Function1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> GetParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> None
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Participante
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Predef
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Product
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> ScalaRunTime
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> Serializable
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> String
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> _hashCode
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> _toString
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> actor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> actorRef2Scala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> akka
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> apply
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> asInstanceOf
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> collection
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> corescala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> eq
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> isInstanceOf
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> mutable
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> nome
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> package
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> participantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> runtime
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> scala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> self
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> sender
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> toList
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> toString
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> typedProductIterator
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> unchecked
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> ||
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> !
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> <init>
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ?
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> A1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ActorSystem
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> App
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> B1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ClassTag
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ColetorParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ExecutionContext
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Function1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> GetParticipantes
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Implicits
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Predef
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Props
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> SistemaColetor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Thread
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> Timeout
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> actor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> actorOf
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> actorRef2Scala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> akka
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> apply
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> asInstanceOf
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> ask
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> coletor
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> concurrent
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> corescala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> duration
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> foreach
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> global
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> isInstanceOf
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> java
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> lang
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> language
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> materializeClassTag
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> onSuccess
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> package
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> pattern
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> postfixOps
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> println
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$2
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$3
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$4
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$5
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$6
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> qual$7
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> recebendo
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> scala
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> seconds
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> sleep
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> stop
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> system
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> terminate
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> timeout
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> unchecked
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> util
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$1
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$10
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$11
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$12
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$13
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$14
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$15
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$2
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$3
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$4
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$5
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$6
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$7
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$8
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> x$9
+product stamps:
+11 items
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/ColetorParticipantes$$anonfun$receive$1.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/ColetorParticipantes.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/GetParticipantes$.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/GetParticipantes.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/Participante$.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/Participante.class -> lastModified(1497127693000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$$anonfun$1$$anonfun$applyOrElse$1.class -> lastModified(1497127994000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$$anonfun$1.class -> lastModified(1497127994000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$.class -> lastModified(1497127994000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor$delayedInit$body.class -> lastModified(1497127994000)
+/home/turmasabado/devel/cs2-lab02/target/scala-2.11/classes/corescala/SistemaColetor.class -> lastModified(1497127994000)
+source stamps:
+2 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> hash(e2395ef4a8bc430e9996eb0c801fb3ffe7ab29ad)
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> hash(d2cd4546027c966447edffce0f42d0ffecc9d49f)
+binary stamps:
+3 items
+/home/turmasabado/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar -> lastModified(1443601439000)
+/home/turmasabado/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1458920754000)
+/java/jdk1.8.0_11/jre/lib/rt.jar -> lastModified(1402966922000)
+class names:
+3 items
+/home/turmasabado/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar -> akka.pattern.AskSupport
+/home/turmasabado/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.runtime.AbstractPartialFunction
+/java/jdk1.8.0_11/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+2 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAAR7ioAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAACc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwDxk4cnQABHNlbGZzcQB+AAvqbIXUdAAHY29udGV4dHVxAH4ACQAAAC9zcQB+AAvalddXdAAGbm90aWZ5c3EAfgALdMXGmXQAB1JlY2VpdmVzcQB+AAvaGeXcdAAEd2FpdHNxAH4AC4aDJ+50AA0kYXNJbnN0YW5jZU9mc3EAfgALsjvJf3QAFENvbGV0b3JQYXJ0aWNpcGFudGVzc3EAfgALOFyTinQADHByb2R1Y3RBcml0eXNxAH4AC9qeBE90AAZlcXVhbHNzcQB+AAsuyZwmdAAMYXNJbnN0YW5jZU9mc3EAfgAL7gOx9HQADHN5bmNocm9uaXplZHNxAH4ACyjAnmZ0AA0kaXNJbnN0YW5jZU9mc3EAfgAL4CbvpnQAB3JlY2VpdmVzcQB+AAuYvzrodAAKcHJlUmVzdGFydHNxAH4AC4B9XKp0AA1hcm91bmRSZWNlaXZlc3EAfgALEYq2CXQACGNhbkVxdWFsc3EAfgALdFItP3QADFBhcnRpY2lwYW50ZXNxAH4AC0/Sgxl0AAtwb3N0UmVzdGFydHNxAH4ACx/+Y0h0AAhwb3N0U3RvcHNxAH4AC3Q0eEZ0AA1wcm9kdWN0UHJlZml4c3EAfgALxkIwknQACW5vdGlmeUFsbHNxAH4AC5zn4NF0ABFhcm91bmRQb3N0UmVzdGFydHNxAH4AC10Q2EF0AAxpc0luc3RhbmNlT2ZzcQB+AAsgWtfydAAQYXJvdW5kUHJlUmVzdGFydHNxAH4AC0O+ie90AA5hcm91bmRQb3N0U3RvcHNxAH4AC9rwWgR0AAY8aW5pdD5zcQB+AAsqKyxWdAAIcHJlU3RhcnRzcQB+AAvzJoLmdAAJdW5oYW5kbGVkc3EAfgALCW+UGXQAEEdldFBhcnRpY2lwYW50ZXNzcQB+AAuINxTwdAACPT1zcQB+AAu6pa8OdAAFY2xvbmVzcQB+AAvMsEa+dAAGJGluaXQkc3EAfgAL3QUYmnQABGNvcHlzcQB+AAuaoYAudAAGc2VuZGVyc3EAfgALCGyY3HQACHRvU3RyaW5nc3EAfgALswhTdXQADXBhcnRpY2lwYW50ZXNzcQB+AAuW39GvdAACIT1zcQB+AAuFtJK0dAAIZ2V0Q2xhc3NzcQB+AAskaqAIdAAOY29weSRkZWZhdWx0JDFzcQB+AAujkrhZdAACbmVzcQB+AAuQ4IkWdAAEbm9tZXNxAH4AC5ZwIl10ABJzdXBlcnZpc29yU3RyYXRlZ3lzcQB+AAtoMpj1dAACZXFzcQB+AAtRbWzLdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgALtCukMHQAAiMjc3EAfgAL7PMy0nQACGZpbmFsaXplc3EAfgALOmrB5XQADnByb2R1Y3RFbGVtZW50c3EAfgALuXi0WXQACGhhc2hDb2Rlc3EAfgALWr1trHQADmFyb3VuZFByZVN0YXJ0c3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAA3NyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AeXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAFmNvcmVzY2FsYS5QYXJ0aWNpcGFudGV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AkXNyABN4c2J0aS5hcGkuU3R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
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAgit/HAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAABc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwsJH87XQAB3RpbWVvdXR1cQB+AAkAAAAcc3EAfgALpOb6gHQABm5vdGlmeXNxAH4AC7e9Yjh0AAR3YWl0c3EAfgALYSHP7nQADSRhc0luc3RhbmNlT2ZzcQB+AAtbHmzvdAAGc3lzdGVtc3EAfgALk2jvu3QAB2NvbGV0b3JzcQB+AAuv2jRddAAGZXF1YWxzc3EAfgAL5SQjWHQADGFzSW5zdGFuY2VPZnNxAH4AC9cUsXB0AA5leGVjdXRpb25TdGFydHNxAH4AC//4MIB0AAxzeW5jaHJvbml6ZWRzcQB+AAt82HA6dAANJGlzSW5zdGFuY2VPZnNxAH4AC/HqR8F0AA5TaXN0ZW1hQ29sZXRvcnNxAH4AC2TchYV0AARtYWluc3EAfgALiLF/tHQACW5vdGlmeUFsbHNxAH4ACyqnyst0AAxpc0luc3RhbmNlT2ZzcQB+AAvAuj04dAAJcmVjZWJlbmRvc3EAfgALixHgf3QAAj09c3EAfgALuXOMUHQABWNsb25lc3EAfgALUBDHunQABiRpbml0JHNxAH4AC7vhuJZ0AAh0b1N0cmluZ3NxAH4ACzooWUx0AARhcmdzc3EAfgALPyTEBnQAAiE9c3EAfgALHMsx6HQACGdldENsYXNzc3EAfgALkgn0DHQAAm5lc3EAfgAL+v9L7nQAAmVxc3EAfgALt6r1cnQAC2RlbGF5ZWRJbml0c3EAfgALqsCZQXQAAiMjc3EAfgAL2YBWqHQACGZpbmFsaXplc3EAfgALkC9SvHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AUXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAGGNvcmVzY2FsYS5TaXN0ZW1hQ29sZXRvcnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ABpzY2FsYS5kZXByZWNhdGVkT3ZlcnJpZGluZ3QAEHNjYWxhLmRlcHJlY2F0ZWRzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4Aa3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBRTAAJaW5oZXJpdGVkcQB+AFFMAAdwYXJlbnRzcQB+AFF4cQB+AHBzcQB+AGt1cQB+AEwAAAAAc3EAfgBrdXEAfgBMAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBScQB+AFt1cQB+AFwAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXEAfgB6eHB1cgAfW0x4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW50O1Gdpo84JQ94AgAAeHAAAAABc3IAHHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnTWRbHYAxsXfAIAAkwABG5hbWVxAH4ADEwABXZhbHVlcQB+AAx4cHQAAHQAKigibWFpbiBzaG91bGQgbm90IGJlIG92ZXJyaWRkZW4iLCIyLjExLjAiKXNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AG90ABRkZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Ab3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AlHNxAH4AXgBxAH4AJ3VxAH4AYQAAAABzcQB+AId0AARVbml0cQB+AI11cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADEwAA3RwZXEAfgB6eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBkdAAFUGxhaW5xAH4AN3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AiFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4Ab3NxAH4Ah3QABUFycmF5cQB+AI11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4Ah3QABlN0cmluZ3NxAH4Ai3NxAH4AjnVxAH4AkQAAAANzcQB+AJN0AARqYXZhc3EAfgCTdAAEbGFuZ3EAfgCYc3EAfgBrdXEAfgCvAAAABHNxAH4Ah3QAA0FwcHEAfgCNc3EAfgCHdAALRGVsYXllZEluaXRxAH4AjXNxAH4Ah3QABk9iamVjdHEAfgCzc3EAfgCHdAADQW55cQB+AI11cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0AAljb3Jlc2NhbGFzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVyTyDtQdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU0s1FRgJ8lmRH7f/OD0LQ/+zJ1J8=
+external apis:
+0 items
+source infos:
+2 items
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/atores.scala -> 
+AAAAAAAAAAA=
+/home/turmasabado/devel/cs2-lab02/src/main/scala/corescala/sistema.scala -> 
+AAAAAAAAAAA=
+compilations:
+39 items
+00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJNsX9p1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJNv9sh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJNwioB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+03 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJNzMjt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+04 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJNzXFF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+05 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN0Nux1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+06 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN0vtp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+07 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN022t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+08 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN1Dyd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN11rR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN2iP51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN3H8h1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+12 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN3x2B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+13 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN5ESd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+14 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN5aJF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+15 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN55vF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+16 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN6oYJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+17 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN64jN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+18 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN7gKV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+19 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN82GV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+20 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN9ESl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+21 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN/UKB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+22 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJN//ol1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+23 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOBFZN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+24 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOCNgJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+25 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJODhNV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+26 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOEWUd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+27 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOF4et1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+28 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOINCx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+29 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOjAnB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+30 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOjjCp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+31 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJOsq+t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+32 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPDm/l1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+33 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPE3Gl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+34 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPFQBt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+35 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPFYIZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+36 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPFm2h1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+37 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPGwf91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+38 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXJPIO1B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3R1cm1hc2FiYWRvL2RldmVsL2NzMi1sYWIwMi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==

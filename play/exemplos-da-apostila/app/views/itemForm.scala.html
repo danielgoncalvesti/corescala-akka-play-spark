@@ -1,0 +1,15 @@
+@(formItem: Form[Item])(implicit messages:Messages)
+
+@import helper._
+
+<html>
+	<body>
+		<h1>@messages("titulo.itemForm")</h1>
+		@form(routes.ItemController.salvarItem) {
+			@inputText(formItem("id"),'_error -> "erro desconhecido")
+			@inputText(formItem("nome"))
+			<input type="submit" value="@messages("botaoSubmit")" />
+		}
+		
+	</body>
+</html>

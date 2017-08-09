@@ -1,0 +1,67 @@
+{
+  "metadata" : {
+    "name" : "spark-lab",
+    "user_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "auto_save_timestamp" : "1969-12-31T21:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : [ "-Xmx512m" ],
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "id" : "20FCFA5AEF2D4BD380CC97088ABCF686"
+    },
+    "cell_type" : "markdown",
+    "source" : "#Laboratorio 1 - Contagem de palavras com Spark Notebook\n\nVamos utilizar o Spark Notebook para executar um aplicativo de contagem de palavras.\n\nNeste laboratório cada célula corresponde a uma instrução, para que possamos executá-lo passo a passo, mas poderiamos agrupar várias instruções em cada célula.\n\nPara executar o código de cada célula basta selecioná-la e pressionar Ctrl+ENTER ou clicar no botão run (triangulo) na barra de ferramentas.\n\nSeguindo o modelo do objeto OlaMundoSpark apresentado na primeira parte do laboratório, implemente o código pedido a seguir:"
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "B8DB24727F474997A1A8AFB4BBC39D67"
+    },
+    "cell_type" : "code",
+    "source" : "//Primeiro vamos carregar o conteudo do arquivo README.MD.\n",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "4E69D499766249458A33B16A7A6751F2"
+    },
+    "cell_type" : "code",
+    "source" : "//Agora vamos quebrar o arquivo carregado em uma lista de palavras.\n",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "E7A71566E0F54336837FF2281F0FE5F8"
+    },
+    "cell_type" : "code",
+    "source" : "//O próximo passo é aplicar o algoritmo map/reduce de contagem de palavras conforme visto na apostila.\n",
+    "outputs" : [ ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : true,
+      "id" : "026F2B007966466C89E47FB078A2CC13"
+    },
+    "cell_type" : "code",
+    "source" : "//Por fim, vamos imprimir cada uma das palavras encontradas e sua respectiva contagem.\n",
+    "outputs" : [ ]
+  } ],
+  "nbformat" : 4
+}

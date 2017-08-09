@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0mFuncionarioSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[32m+[0m calculo de um valor aumentado[0m
+[0m[[0minfo[0m] [0mcalculo de aumento de salario[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar um funcionario com 10% de aumento[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar um funcionario com 20% de aumento[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar um funcionario com 30% de aumento[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification FuncionarioSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 91 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m4 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

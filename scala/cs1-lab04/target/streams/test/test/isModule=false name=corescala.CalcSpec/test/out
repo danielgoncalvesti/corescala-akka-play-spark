@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0mCalcSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mo nome do usuario da calculadora[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter o nome correto[0m
+[0m[[0minfo[0m] [0m  [32m+[0m ter o sobrenome correto[0m
+[0m[[0minfo[0m] [0mfazer calculos com a calculadora[0m
+[0m[[0minfo[0m] [0m  [32m+[0m somar os numeros[0m
+[0m[[0minfo[0m] [0m  [32m+[0m subtrair os numeros[0m
+[0m[[0minfo[0m] [0m  [32m+[0m multiplicar os numeros[0m
+[0m[[0minfo[0m] [0m  [32m+[0m dividir os numeros[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification CalcSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 173 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m6 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

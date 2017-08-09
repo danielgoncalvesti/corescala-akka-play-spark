@@ -1,0 +1,15 @@
+@(items: Seq[Item])(implicit messages:Messages)
+
+<html>
+	<body>
+		<h1>@messages("titulo.index")</h1>
+		<a href=@routes.ItemController.novoItem>@messages("link.itemForm")</a>
+		
+		<ul>
+			@items.map { item =>
+				<li>@item.nome</li>
+			}
+		</ul>
+		
+	</body>
+</html>

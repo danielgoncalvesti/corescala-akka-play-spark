@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mContainerSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mo container processando uma pagina[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar o id da request na pagina inicial[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar a pagina de about[0m
+[0m[[0minfo[0m] [0m  [32m+[0m retornar a pagina de contato[0m
+[0m[[0minfo[0m] [0m  [32m+[0m mostrar pagina de erro para paginas desconhecidas[0m
+[0m[[0minfo[0m] [0mo container gerando html[0m
+[0m[[0minfo[0m] [0m  [32m+[0m gerar o html com o conteudo correto[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification ContainerSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 68 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m5 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

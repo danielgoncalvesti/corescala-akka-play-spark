@@ -1,0 +1,60 @@
+[0m[[0mdebug[0m] [0m[naha] The corescala.Pessoa source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	numDocumento.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) corescala.Pessoa: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) corescala.Pessoa.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala: Set(numDocumento)[0m
+[0m[[0mdebug[0m] [0m[naha] The corescala.CriadorPessoas$ source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	numDocumento.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) corescala.CriadorPessoas$: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) corescala.CriadorPessoas$.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala: Set(numDocumento)[0m
+[0m[[0mdebug[0m] [0m[naha] The corescala.PessoaJuridica source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	numDocumento.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) corescala.PessoaJuridica: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) corescala.PessoaJuridica.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala: Set(numDocumento)[0m
+[0m[[0mdebug[0m] [0m[naha] The corescala.PessoaFisica source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	numDocumento.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) corescala.PessoaFisica: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) corescala.PessoaFisica.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala: Set(numDocumento)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(corescala.Pessoa,ModifiedNames(regularNames = numDocumento, implicitNames = )), NamesChange(corescala.CriadorPessoas$,ModifiedNames(regularNames = numDocumento, implicitNames = )), NamesChange(corescala.PessoaJuridica,ModifiedNames(regularNames = numDocumento, implicitNames = )), NamesChange(corescala.PessoaFisica,ModifiedNames(regularNames = numDocumento, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set(/home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/turmasabado/devel/cs1-lab05/src/test/scala/corescala/PessoasSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/turmasabado/devel/cs1-lab05/target/scala-2.11/test-classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1e2737c, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/java/jdk1.8.0_11/jre/lib/resources.jar:/java/jdk1.8.0_11/jre/lib/rt.jar:/java/jdk1.8.0_11/jre/lib/sunrsasign.jar:/java/jdk1.8.0_11/jre/lib/jsse.jar:/java/jdk1.8.0_11/jre/lib/jce.jar:/java/jdk1.8.0_11/jre/lib/charsets.jar:/java/jdk1.8.0_11/jre/lib/jfr.jar:/java/jdk1.8.0_11/jre/classes:/home/turmasabado/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/turmasabado/devel/cs1-lab05/target/scala-2.11/test-classes:/home/turmasabado/devel/cs1-lab05/target/scala-2.11/classes:/home/turmasabado/.ivy2/cache/org.specs2/specs2-core_2.11/jars/specs2-core_2.11-3.6.5.jar:/home/turmasabado/.ivy2/cache/org.specs2/specs2-matcher_2.11/jars/specs2-matcher_2.11-3.6.5.jar:/home/turmasabado/.ivy2/cache/org.specs2/specs2-common_2.11/jars/specs2-common_2.11-3.6.5.jar:/home/turmasabado/.ivy2/cache/org.scalaz/scalaz-core_2.11/bundles/scalaz-core_2.11-7.1.3.jar:/home/turmasabado/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/turmasabado/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar:/home/turmasabado/.ivy2/cache/org.scalaz/scalaz-concurrent_2.11/bundles/scalaz-concurrent_2.11-7.1.3.jar:/home/turmasabado/.ivy2/cache/org.scalaz/scalaz-effect_2.11/bundles/scalaz-effect_2.11-7.1.3.jar:/home/turmasabado/.ivy2/cache/org.scalaz.stream/scalaz-stream_2.11/bundles/scalaz-stream_2.11-0.8.jar:/home/turmasabado/.ivy2/cache/org.scodec/scodec-bits_2.11/bundles/scodec-bits_2.11-1.0.9.jar:/home/turmasabado/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/turmasabado/.ivy2/cache/org.spire-math/kind-projector_2.11/jars/kind-projector_2.11-0.6.3.jar:/home/turmasabado/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 3.879330944 s[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
